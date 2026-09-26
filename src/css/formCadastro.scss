@@ -1,6 +1,131 @@
+:root{
+    --padding-meddium: 1.6rem;
+}
+h1,h2{
+    font-size: 2rem;
+    font-weight:800;
+    margin:0;
+    padding:0;
+    line-height: 100%;
+    @media (max-width:372px){
+        font-size:1.7rem;
+    }
+}
+
+.page{
+    max-width: 1024px;
+    margin:0 auto;
+    padding:1rem 0;
+}
+
+.navbar-search{
+    display:flex;
+    gap:30px;
+    margin: 0 1rem;
+}
+
+.card-modal{
+     padding:2rem 0rem;
+}
+
 .campos{
     display:flex;
     flex-direction:column;
-    gap:1rem;
+    gap:1.5rem;
     padding:1rem;
+}
+
+.header-form-register{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    margin-bottom: 1rem;
+    gap:20px;
+}
+
+.btn-close{
+    display:flex;
+    align-items:center;
+    gap:.6rem;
+    border:0;
+    text-transform:uppercase;
+    font-weight:800;
+    background:orange;
+    cursor:pointer;
+}
+
+ .btn-x{
+    color:white;
+    font-size:1.6rem;
+    display: none;
+     @media (max-width:425px){
+        display:flex;
+    }
+ }
+
+ button .btn-label-cancelar{
+    font-size:1.1rem;
+    color:white;
+    @media (max-width:425px){
+        display:none;
+    }
+ }
+
+.table-fake{
+    padding: var(--padding-meddium) 1rem;
+    display:flex;
+    flex-direction:column;
+    gap:1rem;
+
+    @media (max-width:500px){
+        display:flex;
+        flex-direction:column;
+    }
+
+     @media (min-width:501px) and (max-width:699px){
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        gap:1rem;
+    }
+}
+
+.row-fake{
+    box-shadow: 0 0 10px #00000050;
+    border-radius:5px;
+    padding:var(--padding-meddium);
+     gap:1rem;
+     grid-column:1/-1
+}
+
+.row-fake p, .row-fake div{
+    font-weight:600;
+}
+
+.row-dados{
+    display:grid;
+    grid-template-columns: repeat(3,1fr) 150px;
+    align-items:center;
+    box-shadow: 0 0 10px #00000050;
+    border-radius:5px;
+    gap:1rem;
+    padding:var(--padding-meddium);
+
+    @media (max-width:700px){
+        display:flex;
+        flex-direction: column;
+        align-items: start;
+        gap:0;
+        border:1px solid #ccc;
+     }
+}
+.row-dados p{
+    font-weight:normal;
+    margin:0;
+    padding:0;
+}
+ 
+
+p{
+    padding:0;
+    margin:0;
 }

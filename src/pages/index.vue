@@ -40,12 +40,18 @@ import EssentialLink, {
   type EssentialLinkProps
 } from "@/components/EssentialLink.vue";
 
-const linksList: EssentialLinkProps[] = [
+ const linksList: EssentialLinkProps[] = [
   {
-    label: "Docs",
-    caption: "quasar.dev",
-    icon: "school",
-    link: "https://quasar.dev"
+    label: "Home",
+    caption: "Home",
+    icon: "home",
+    to: "/"
+  },
+  {
+    label: "Carteira digital",
+    caption: "Gestor financeiro",
+    icon: "wallet",
+    to: "/CarteiraDigital"   // ← veja observação abaixo sobre o nome
   },
   {
     label: "GitHub",
@@ -59,7 +65,7 @@ const linksList: EssentialLinkProps[] = [
     icon: "chat",
     link: "https://chat.quasar.dev"
   },
-  ];
+];
 
 const leftDrawerOpen = ref(false);
 
