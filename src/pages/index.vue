@@ -60,10 +60,10 @@ import EssentialLink, {
     link: "https://github.com/quasarframework"
   },
   {
-    label: "Discord Chat Channel",
-    caption: "chat.quasar.dev",
-    icon: "chat",
-    link: "https://chat.quasar.dev"
+    label: "Canal de comunicação",
+    caption: "Email",
+    icon: "mail",
+    to: "https://chat.quasar.dev"
   },
 ];
 
