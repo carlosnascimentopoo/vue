@@ -22,7 +22,7 @@
             </q-btn>
           </div>
 
-          <q-input placeholder="Nome" outlined v-model="formulario.nome" />
+          <q-input placeholder="Nome completo" outlined v-model="formulario.nome" />
           <q-input placeholder="E-mail" outlined v-model="formulario.email" />
           <q-input placeholder="Telefone" outlined v-model="formulario.telefone" />
 
@@ -86,7 +86,7 @@ const formulario = ref<Formulario>({
 const usuarios = ref<Usuario[]>([
   {
     id: 1,
-    nome: "carlos",
+    nome: "carla",
     email: "carlos@gail.com",
     telefone: "889999-1111",
   },
